@@ -28,7 +28,7 @@ export const NavBar = () => {
     return (
     <div className={!navBarOpen ? styles.navBar: styles.navOpen}>
         <img src={logoImg} alt="Logo" className={styles.logoImg}/>
-        <p className={styles.textNavBar}>Cartelera</p>
+        <p className={styles.textNavBar}>Cartelera Prueba</p>
         <p className={styles.textNavBar}>Categoría</p>
         {!navBarOpen ? (<IoIosArrowDown className={styles.arrow} onClick={()=> setNavBarOpen(!navBarOpen)} size={20}/>):
         (<IoIosArrowUp onClick={()=> setNavBarOpen(!navBarOpen)} size={20} className={styles.arrow}/>)}
