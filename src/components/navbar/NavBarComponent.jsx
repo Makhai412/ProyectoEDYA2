@@ -1,8 +1,7 @@
 import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
-import type { CustomFlowbiteTheme } from "flowbite-react";
 
 
-const customButtonTheme: CustomFlowbiteTheme["button"] = {
+let customButtonTheme = {
   color: {
     primary: "bg-red-600 text-white hover:bg-white hover:text-red-600",
   },
@@ -10,7 +9,7 @@ const customButtonTheme: CustomFlowbiteTheme["button"] = {
 
 
 
- const MyButon = () => {
+ const NavbarComponent = () => {
   return (
     <Navbar className="bg-red-700" fluid>
       <NavbarBrand href="https://flowbite-react.com">
@@ -33,4 +32,4 @@ const customButtonTheme: CustomFlowbiteTheme["button"] = {
 
 }
 
-export default MyButon;
+export default NavbarComponent;
