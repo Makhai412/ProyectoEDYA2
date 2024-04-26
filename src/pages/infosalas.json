@@ -1,0 +1,252 @@
+[
+    {
+        "id":1,
+        "sinopsis":"Cuando el carpintero Geppetto ve una estrella fugaz, desea que el títere que acaba de terminar, Pinocho, pueda convertirse en un niño de verdad. En la noche, el Hada Azul concede el deseo de Geppetto y le pide a Pepito Grillo que sea su conciencia.",
+        "img": "https://pics.filmaffinity.com/Pinocho-256590713-large.jpg",
+        "horario":[{
+            "fecha": "25/05/2024",
+            "horaIni": "14:20 p.m.",
+            "horaFin": "16:16 p.m.",
+            "sala": {
+                "idsala":1,
+                "nombre": "sala 1"
+                    }
+                },
+                {
+            "fecha": "25/05/2024",
+            "horaIni": "16:40 p.m.",
+            "horaFin": "18:36 p.m.",
+            "sala": {
+                "idsala":1,
+                "nombre": "sala 1"
+                    }
+                }
+            ]
+        
+    },
+    {
+    "id":2,
+    "sinopsis":"Woody siempre ha tenido claro cuál es su labor en el mundo y cuál es su prioridad: cuidar a su dueño, ya sea Andy o Bonnie. Sin embargo, Woody descubrirá lo grande que puede ser el mundo para un juguete cuando Forky se convierta en su nuevo compañero de habitación. Los juguetes se embarcarán en una aventura de la que no se olvidarán jamás.",
+    "img": "https://static.wikia.nocookie.net/doblaje/images/9/9c/Toy_Story_4_Mexican_poster.jpg/revision/latest?cb=20211019194314&path-prefix=es",
+    "horario":[{
+        "fecha": "25/05/2024",
+        "horaIni": "14:00 p.m.",
+        "horaFin": "15:40 p.m.",
+        "sala": {
+            "idsala":2,
+            "nombre": "sala 2"
+                }
+            },
+            {
+        "fecha": "25/05/2024",
+        "horaIni": "16:00 p.m.",
+        "horaFin": "17:40 p.m.",
+        "sala": {
+            "idsala":2,
+            "nombre": "sala 2"
+                }
+            }
+        ]
+    
+    },
+    {
+        "id":3,
+        "sinopsis":"Sonic intenta navegar por las complejidades de la vida en la Tierra con su nuevo mejor amigo, un humano llamado Tom Wachowski. Pronto deben unir fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus poderes para dominar el mundo.",
+        "img": "https://www.aceprensa.com/wp-content/uploads/2020/02/Sonic.-La-peli%CC%81cula-819x1024.jpg",
+        "horario":[{
+            "fecha": "25/05/2024",
+            "horaIni": "14:10 p.m.",
+            "horaFin": "15:50 p.m.",
+            "sala": {
+                "idsala":3,
+                "nombre": "sala 3"
+                    }
+                },
+                {
+            "fecha": "25/05/2024",
+            "horaIni": "16:20 p.m.",
+            "horaFin": "18:00 p.m.",
+            "sala": {
+                "idsala":3,
+                "nombre": "sala 3"
+                    }
+                }
+            ]
+        
+    },
+    {
+        "id":4,
+        "sinopsis":"Una paramédica de Manhattan que se ve obligada a enfrentarse a revelaciones sobre su pasado forja una relación con tres jóvenes destinadas a tener un futuro poderoso, si consiguen sobrevivir a un presente mortal.",
+        "img": "https://pics.filmaffinity.com/Madame_Web-924006544-large.jpg",
+        "horario":[{
+            "fecha": "25/05/2024",
+            "horaIni": "14:30 p.m.",
+            "horaFin": "16:26 p.m.",
+            "sala": {
+                "idsala":4,
+                "nombre": "sala 4"
+                    }
+                },
+                {
+            "fecha": "25/05/2024",
+            "horaIni": "17:10 p.m.",
+            "horaFin": "19:06 p.m.",
+            "sala": {
+                "idsala":4,
+                "nombre": "sala 4"
+                    }
+                }
+            ]
+        
+    },
+    {
+        "id":5,
+        "sinopsis":"Jessica se muda al hogar en el que creció con su familia. Allí, su pequeña hijastra, Alice, encuentra un osito de peluche llamado Chauncey. Poco a poco, el comportamiento de Alice se va volviendo perturbador, por lo que Alice sospecha del juguete.",
+        "img": "https://pics.filmaffinity.com/Imaginary-725966869-large.jpg",
+        "horario":[{
+            "fecha": "25/05/2024",
+            "horaIni": "18:10 p.m.",
+            "horaFin": "19:55 p.m.",
+            "sala": {
+                "idsala":5,
+                "nombre": "sala 5"
+                    }
+                },
+                {
+            "fecha": "25/05/2024",
+            "horaIni": "20:30 p.m.",
+            "horaFin": "22:15 p.m.",
+            "sala": {
+                "idsala":5,
+                "nombre": "sala 5"
+                    }
+                }
+            ]
+        
+    },
+    {
+        "id":6,
+        "sinopsis":"En Halloween, un grupo de amigos encuentran una casa encantada que hará que sus pesadillas se vuelvan realidad.",
+        "img": "https://es.web.img3.acsta.net/pictures/19/09/26/16/34/3403554.jpg",
+        "horario":[{
+            "fecha": "25/05/2024",
+            "horaIni": "19:00 p.m.",
+            "horaFin": "20:30 p.m.",
+            "sala": {
+                "idsala":2,
+                "nombre": "sala 2"
+                    }
+                },
+                {
+            "fecha": "25/05/2024",
+            "horaIni": "21:00 p.m.",
+            "horaFin": "22:30 p.m.",
+            "sala": {
+                "idsala":2,
+                "nombre": "sala 2"
+                    }
+                }
+            ]
+        
+    },
+    {
+        "id":7,
+        "sinopsis":"Una mujer y su hijo contratan a un variopinto grupo de supuestos expertos espirituales para que los ayuden a liberar su casa de los fenómenos paranormales que sufre.",
+        "img": "https://es.web.img3.acsta.net/pictures/23/05/18/08/55/0817327.jpg",
+        "horario":[{
+            "fecha": "25/05/2024",
+            "horaIni": "14:10 p.m.",
+            "horaFin": "16:10 p.m.",
+            "sala": {
+                "idsala":6,
+                "nombre": "sala 6"
+                    }
+                },
+                {
+            "fecha": "25/05/2024",
+            "horaIni": "16:40 p.m.",
+            "horaFin": "18:40 p.m.",
+            "sala": {
+                "idsala":6,
+                "nombre": "sala 6"
+                    }
+                }
+            ]
+        
+    },
+    {
+        "id":8,
+        "sinopsis":"Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.",
+        "img": "https://c8.alamy.com/compes/mhgfy9/vengadores-infinity-war-2018-dirigido-por-anthony-russo-y-joe-russo-y-protagonizada-por-robert-downey-jr-chris-evans-mark-ruffalo-chris-hemsworth-y-scarlett-johansson-los-vengadores-aliate-con-heroes-de-todo-el-universo-marvel-para-detener-thanos-recogiendo-las-restantes-piedras-de-infinito-y-destruyendo-la-tierra-mhgfy9.jp7",
+        "horario":[{
+            "fecha": "25/05/2024",
+            "horaIni": "15:20 p.m.",
+            "horaFin": "17:50 p.m.",
+            "sala": {
+                "idsala":7,
+                "nombre": "sala 7"
+                    }
+                },
+                {
+            "fecha": "25/05/2024",
+            "horaIni": "19:10 p.m.",
+            "horaFin": "21:40 p.m.",
+            "sala": {
+                "idsala":7,
+                "nombre": "sala 7"
+                    }
+                }
+            ]
+        
+    },
+    {
+        "id":9,
+        "sinopsis":"Winnie the Pooh y Piglet se han vuelto salvajes y quieren sangre humana. Los antes entrañables amigos aterrorizan a Christopher Robin y un grupo de jóvenes en una casa aislada.",
+        "img": "https://pics.filmaffinity.com/Winnie_the_Pooh_Miel_y_sangre-831124420-large.jpg",
+        "horario":[{
+            "fecha": "25/05/2024",
+            "horaIni": "18:30 p.m.",
+            "horaFin": "19:54 p.m.",
+            "sala": {
+                "idsala":3,
+                "nombre": "sala 3"
+                    }
+                },
+                {
+            "fecha": "25/05/2024",
+            "horaIni": "20:40 p.m.",
+            "horaFin": "22:04 p.m.",
+            "sala": {
+                "idsala":3,
+                "nombre": "sala 3"
+                    }
+                }
+            ]
+        
+    },
+    {
+        "id":10,
+        "sinopsis":"El payaso Art resucita en la morgue. Un año después, en la noche de Halloween, el siniestro psicópata vuelve al condado de Miles para atacar a unos hermanos adolescentes cuyo difunto padre les legó un libro con bocetos premonitorios sobre Art.",
+        "img": "https://es.web.img3.acsta.net/pictures/22/12/27/12/24/4448854.jpg",
+        "horario":[{
+            "fecha": "25/05/2024",
+            "horaIni": "19:10 p.m.",
+            "horaFin": "21:28 p.m.",
+            "sala": {
+                "idsala":1,
+                "nombre": "sala 1"
+                    }
+                },
+                {
+            "fecha": "25/05/2024",
+            "horaIni": "20:20 p.m.",
+            "horaFin": "22:48 p.m.",
+            "sala": {
+                "idsala":4,
+                "nombre": "sala 4"
+                    }
+                }
+            ]
+        
+    }
+]
