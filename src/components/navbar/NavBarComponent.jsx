@@ -16,26 +16,6 @@ const NavbarComponent = () => {
   //const emailInputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <>
-<<<<<<< HEAD
-      <Navbar className="bg-red-700" fluid>
-        <NavbarBrand href="https://flowbite-react.com">
-          <img src="/logo3.png" className="mr-3 h-6 sm:h-20" alt="Flowbite React Logo" />
-          <span className="self-center text-white text-xl font-semibold">Cinema UAO </span>
-        </NavbarBrand>
-        <div className="flex md:order-2">
-          <Button theme={customButtonTheme} onClick={() => setOpenModal(true)} color="primary">Login</Button>
-          <NavbarToggle />
-        </div>
-        <NavbarCollapse>
-          <NavbarLink href="/home" className="text-white">
-            Home
-          </NavbarLink>
-          <NavbarLink href="#" className="text-white">Cartelera</NavbarLink>
-          <NavbarLink href="#" className="text-white">Categoria</NavbarLink>
-        </NavbarCollapse>
-      </Navbar>
-=======
     <Navbar className="bg-red-700 font-serif" fluid>
       <NavbarBrand href="https://flowbite-react.com">
         <img src="/logo3.png" className="mr-3 h-6 sm:h-20" alt="Flowbite React Logo" />
@@ -53,17 +33,7 @@ const NavbarComponent = () => {
         <NavbarLink href="#" className="text-white">Categoria</NavbarLink>
       </NavbarCollapse>
     </Navbar>
->>>>>>> dev
-
-      <Modal show={openModal} size="md" popup onClose={() => setOpenModal(false)}>
-        <Modal.Header />
-        <Modal.Body>
-          <LogIn></LogIn>
-        </Modal.Body>
-      </Modal>
-    </>
   );
-
 }
 
 export default NavbarComponent;
