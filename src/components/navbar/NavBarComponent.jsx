@@ -1,5 +1,7 @@
 import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle, Checkbox, Label, Modal, TextInput } from "flowbite-react";
 import { useState, useRef } from 'react'
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LogIn from "../../pages/login/LogIn";
 
 let customButtonTheme = {
@@ -7,8 +9,6 @@ let customButtonTheme = {
     primary: "bg-red-600 text-white hover:bg-white hover:text-red-600",
   },
 };
-
-
 
 const NavbarComponent = () => {
 
@@ -26,11 +26,11 @@ const NavbarComponent = () => {
         <NavbarToggle />
       </div>
       <NavbarCollapse>
-        <NavbarLink href="#" className="text-white">
+        <Link to="/home" className="text-white">
           Home
-        </NavbarLink>
-        <NavbarLink href="#" className="text-white">Cartelera</NavbarLink>
-        <NavbarLink href="#" className="text-white">Categoria</NavbarLink>
+        </Link>
+        <Link to="/cartelera" className="text-white">Cartelera</Link>
+        <Link to="/categoria" className="text-white">Categoria</Link>
       </NavbarCollapse>
     </Navbar>
   );
