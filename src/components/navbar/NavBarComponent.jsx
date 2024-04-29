@@ -1,5 +1,7 @@
 import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle, Checkbox, Label, Modal, TextInput } from "flowbite-react";
 import { useState, useRef } from 'react'
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LogIn from "../../pages/login/LogIn";
 
 let customButtonTheme = {
@@ -8,15 +10,12 @@ let customButtonTheme = {
   },
 };
 
-
-
- const NavbarComponent = () => {
+const NavbarComponent = () => {
 
   const [openModal, setOpenModal] = useState(false);
   //const emailInputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <>
     <Navbar className="bg-red-700 font-serif" fluid>
       <NavbarBrand href="https://flowbite-react.com">
         <img src="/logo3.png" className="mr-3 h-6 sm:h-20" alt="Flowbite React Logo" />
@@ -27,23 +26,14 @@ let customButtonTheme = {
         <NavbarToggle />
       </div>
       <NavbarCollapse>
-        <NavbarLink href="#" className="text-white">
+        <Link to="/home" className="text-white">
           Home
-        </NavbarLink>
-        <NavbarLink href="#" className="text-white">Cartelera</NavbarLink>
-        <NavbarLink href="#" className="text-white">Categoria</NavbarLink>
+        </Link>
+        <Link to="/cartelera" className="text-white">Cartelera</Link>
+        <Link to="/categoria" className="text-white">Categoria</Link>
       </NavbarCollapse>
     </Navbar>
-
-    <Modal show={openModal} size="md" popup onClose={() => setOpenModal(false)}>
-    <Modal.Header />
-    <Modal.Body>
-      <LogIn></LogIn>
-    </Modal.Body>
-    </Modal>
-    </>
   );
-
 }
 
 export default NavbarComponent;
