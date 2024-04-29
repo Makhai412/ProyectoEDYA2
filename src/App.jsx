@@ -12,10 +12,8 @@ function App() {
   return (
     <BrowserRouter>
       <main className="">
-
         <NavbarComponent />
         <AppRoutes />
-
       </main>
     </BrowserRouter>
   );
