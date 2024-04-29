@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 import { Badge, Button, Modal } from 'flowbite-react';
+import { Toast } from "flowbite-react";
+import { HiFire } from "react-icons/hi";
+
 const ReservaPage = () => {
 
   const sillasSala = [{
@@ -120,6 +123,8 @@ const ReservaPage = () => {
 
   const [sillasSalaList, setSillasSalaList] = useState(sillasSala)
 
+  const [showModalSillaReservada, setShowModalSillaReservada] = useState(false)
+
   const reservarSilla = () => {
     
     setOpenModal(false);
@@ -128,7 +133,7 @@ const ReservaPage = () => {
 
     sillaSeleccionada.reservada = true;
     
-
+    setShowModalSillaReservada(true);
 
   }
 
@@ -149,10 +154,10 @@ const ReservaPage = () => {
           sillasSalaList.map(
             (silla, key) => {
               return ( 
-                <Badge color={!silla.reservada ? "success" : "failure"} className="justify-center" onClick={!silla.reservada  ?() => setOpenModal({
+              <Badge key={key} color={!silla.reservada ? "success" : "failure"} className="justify-center" onClick={!silla.reservada ? () => setOpenModal({
                 open: true,
                 id:silla.id
-              }) : {}}>
+              }) : () => {}}>
                 
                 <svg class="w-6 h-6 text-gray-800 text-center dark:text-white" aria-hidden="true" width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
                 <path class="text-center" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2ZM7.99 9a1 1 0 0 1 1-1H9a1 1 0 0 1 0 2h-.01a1 1 0 0 1-1-1ZM14 9a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1Zm-5.506 7.216A5.5 5.5 0 0 1 6.6 13h10.81a5.5 5.5 0 0 1-8.916 3.216Z" clip-rule="evenodd"/>
@@ -180,6 +185,18 @@ const ReservaPage = () => {
             Cancelar
           </Button>
           <Button onClick={() => reservarSilla()}>Aceptar</Button>
+          
+      </Modal.Footer>
+    </Modal>
+
+    <Modal show={showModalSillaReservada} size="md" popup onClose={() => setShowModalSillaReservada(false)}>
+      <Modal.Header>
+        Reserva exitosa
+      </Modal.Header>
+      <Modal.Body>
+            El ticket se ha enviado al correo registrado
+      </Modal.Body>
+      <Modal.Footer>
           
       </Modal.Footer>
     </Modal>

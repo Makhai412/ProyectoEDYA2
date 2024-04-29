@@ -15,23 +15,36 @@ const NavbarComponent = () => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <Navbar className="bg-red-700 font-serif" fluid>
-      <NavbarBrand href="https://flowbite-react.com">
-        <img src="/logo3.png" className="mr-3 h-6 sm:h-20" alt="Flowbite React Logo" />
-        <span className="self-center text-white text-xl font-semibold">Cinema UAO </span>
-      </NavbarBrand>
-      <div className="flex md:order-2">
-        <Button theme={customButtonTheme} onClick={() => setOpenModal(true)} color="primary">Login</Button>
-        <NavbarToggle />
-      </div>
-      <NavbarCollapse>
-        <Link to="/home" className="text-white">
-          Home
-        </Link>
-        <Link to="/cartelera" className="text-white">Cartelera</Link>
-        <Link to="/categoria" className="text-white">Categoria</Link>
-      </NavbarCollapse>
-    </Navbar>
+    <>
+      <Navbar className="bg-red-700 font-serif" fluid>
+        <NavbarBrand href="/">
+          <img src="/logo3.png" className="mr-3 h-6 sm:h-20" alt="Flowbite React Logo" />
+          <span className="self-center text-white text-xl font-semibold">Cinema UAO </span>
+        </NavbarBrand>
+        <div className="flex md:order-2">
+          <Button theme={customButtonTheme} onClick={() => setOpenModal(true)} color="primary">Login</Button>
+          <NavbarToggle />
+        </div>
+        <NavbarCollapse>
+          <Link to="/home" className="text-white">
+            Home
+          </Link>
+          <Link to="/cartelera" className="text-white">Cartelera</Link>
+          <Link to="/categoria" className="text-white">Categoria</Link>
+        </NavbarCollapse>
+      </Navbar>
+      <Modal show={openModal} size="md" popup onClose={() => setOpenModal(false)}>
+          <Modal.Header>
+            
+          </Modal.Header>
+          <Modal.Body>
+            <LogIn/>     
+          </Modal.Body>
+          <Modal.Footer>
+              
+          </Modal.Footer>
+      </Modal>
+    </>
   );
 }
 
