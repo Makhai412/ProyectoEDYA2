@@ -13,7 +13,6 @@ let customButtonTheme = {
  const NavbarComponent = () => {
 
   const [openModal, setOpenModal] = useState(false);
-  //const emailInputRef = useRef<HTMLInputElement>(null);
 
   return (
     <>
