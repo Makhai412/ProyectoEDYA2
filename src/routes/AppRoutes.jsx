@@ -9,13 +9,16 @@ import ActionCategory from '../components/categoriescomponent/InEachCategory/Act
 import AdventureCategory from '../components/categoriescomponent/InEachCategory/AdventureCategory';
 import FantasyCategory from '../components/categoriescomponent/InEachCategory/FantasyCategory';
 import TerrorCategory from '../components/categoriescomponent/InEachCategory/TerrorCategory';
+import ReservaPage from "../pages/reserva/ReservaPage";
 
 
 
 const AppRoutes = () => {
     let routes = useRoutes([
+        { path: '/', element: <Home /> },
         { path: '/home', element: <Home /> },
         { path: '/movie/:id', element: <InMovie /> },
+        { path: '/movie/:id/reserva', element: <ReservaPage/> },
         { path: '/categoria', element: <ListaCategories /> },
         { path: '/categoria/:title', element: <CardCategories /> },
         { path: '/categoria/Acción', element: <ActionCategory /> },

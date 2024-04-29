@@ -5,7 +5,7 @@ export function MovieCard({ id, title, description, imgSrc, imgAlt }) {
     const [showDescription, setShowDescription] = useState(false);
 
     return (
-        <Link to={`/movie/${id}`} style={{ textDecoration: "none" }}>
+        <Link to={`/movie/${id}`} style={{ textDecoration: "none" }} state={{ id, title, description, imgSrc }}>
             <div
                 className="max-w-sm relative"
                 onMouseEnter={() => setShowDescription(true)}
