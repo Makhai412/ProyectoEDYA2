@@ -20,7 +20,7 @@ const AppRoutes = () => {
         { path: '/home', element: <Home /> },
         { path: '/home/signup', element: <SignUp /> },
         { path: '/movie/:id', element: <InMovie /> },
-        { path: '/movie/:id/reserva', element: <ReservaPage/> },
+        { path: '/movie/:id/reserva/:selectedSchedule', element: <ReservaPage/> },
         { path: '/categoria', element: <ListaCategories /> },
         { path: '/categoria/:title', element: <CardCategories /> },
         { path: '/categoria/Acción', element: <ActionCategory /> },

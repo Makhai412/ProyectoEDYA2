@@ -12,6 +12,7 @@ export const Schedule = ({ schedule }) => {
         <ul className="space-y-4 text-sm">
           {schedule.map((horario, index) => (
             <li key={index}>
+              <p className="mb-2 text-gray-700 dark:text-gray-400">Horario: {horario.horarioNum}</p>
               <p className="mb-2 text-gray-700 dark:text-gray-400">Fecha: {horario.fecha}</p>
               <p className="mb-2 text-gray-700 dark:text-gray-400">Hora de inicio: {horario.horaIni}</p>
               <p className="mb-2 text-gray-700 dark:text-gray-400">Hora de fin: {horario.horaFin}</p>
