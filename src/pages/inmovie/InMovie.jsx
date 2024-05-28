@@ -3,14 +3,14 @@ import { Puntuation } from '../../components/moviescomponent/Puntuation'
 import { Schedule } from '../../components/moviescomponent/Schedule'
 import { useLocation } from 'react-router-dom'
 import { SolicitudHorario } from '../../components/moviescomponent/SolicitudHorario'
-
+import { useSelector } from 'react-redux'
 
 
 export const InMovie = () => {
     
     const location = useLocation()
     const { title, description, imgSrc, schedule, puntuation, reviews  } = location.state
-    console.log('este es el horario:', schedule)
+    const { email } = useSelector(state => state.auth);
 
     return (
         <>
@@ -45,12 +45,14 @@ export const InMovie = () => {
                             </p>
                             <div className="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
                                 
-                                <SolicitudHorario horario={schedule} state={schedule} />
+                                    
+                                
+                                {email ? <SolicitudHorario horario={schedule} state={schedule} /> : <p>Por favor, inicie sesión para reservar.</p>}
                                 
                             </div>
                         </div>
                         <div className="col-span-1">
-                            <Schedule schedule={schedule} />
+                            <Schedule schedule={schedule} /> 
                         </div>
                     </div>
                 </div>

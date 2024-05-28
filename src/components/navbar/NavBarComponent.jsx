@@ -15,6 +15,10 @@ const NavbarComponent = () => {
 
   const [openModal, setOpenModal] = useState(false);
 
+  const closeModal = () => {
+    setOpenModal(false);
+  }
+
   const { email } = useSelector(state => state.auth);
   const dispatch = useDispatch();
   return (
@@ -43,7 +47,7 @@ const NavbarComponent = () => {
             
           </Modal.Header>
           <Modal.Body>
-            <LogIn/>     
+            <LogIn closeModal={closeModal} />     
           </Modal.Body>
           <Modal.Footer>
               

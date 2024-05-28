@@ -4,7 +4,7 @@ import { signInThunk } from '../../redux/slices/auth/Thunks';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-const LogIn = () => {
+const LogIn = ({closeModal}) => {
 
   const {error} = useSelector(state => state.auth);
   const [emailInput, setEmail] = useState('')
