@@ -12,8 +12,8 @@ function Home() {
                     description={movie.sinopsis}
                     imgSrc={movie.img}
                     imgAlt={movie.nombre}
-                    schedule = {movie.horario}
-                    puntuation = {movie.calificacion}
+                    schedule={movie.horario}
+                    puntuation={movie.calificacion}
                     reviews={movie.reviews}
                 />
             ))}
