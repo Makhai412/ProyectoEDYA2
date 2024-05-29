@@ -1,6 +1,7 @@
-import { createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, signOut } from "firebase/auth"
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth"
 import { auth } from "../../../firebase/FirebaseConfig"
 import { signIn, logOut, register } from "./AuthSlice"
+
 
 export const registerThunk = (emailInput, password) => {
 

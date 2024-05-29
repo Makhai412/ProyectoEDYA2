@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 
 const ReservaPage = () => {
   const { id, selectedSchedule } = useParams();
-  console.log('selected schedule', selectedSchedule)
+ 
   const sillasSala = Array.from({ length: 30 }, (_, index) => ({
     id: index + 1,
     reservada: false,
