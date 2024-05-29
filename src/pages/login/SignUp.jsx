@@ -105,13 +105,6 @@ const SignUp = () => {
                 </div>
                 
             </div>
-
-            <div className="flex items-start mb-6">
-                <div class="flex items-center h-5">
-                <input id="remember" type="checkbox" value="" className="w-4 h-4 border border-red-300 rounded bg-red-50 focus:ring-3 focus:ring-red-300 dark:bg-red-700 dark:border-red-600 dark:focus:ring-red-600 dark:ring-offset-red-800" required />
-                </div>
-                <label for="remember" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">He leído y acepto los <a href="#" className="text-red-600 hover:underline dark:text-red-500">términos y condiciones</a>.</label>
-            </div>
             <button type="submit" onClick={(event) => onClickRegister(event)} className="text-white bg-red-700 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm w-full sm:w-auto px-4 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ringred-800">Ingresar</button>
     
             </>

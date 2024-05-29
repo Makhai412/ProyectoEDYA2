@@ -50,7 +50,7 @@ const LogIn = ({closeModal}) => {
               <input type="password" value={password} onChange={(event) => onSetPassword(event)} id="password" class="bg-red-50 border border-red-300 text-gray-900 text-base rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500" placeholder="•••••••••" required />
           </div> 
           <button type="submit"  onClick={(event) => onClickLogin(event)} class="text-white bg-red-700 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 w-full">Ingresar</button>
-          <a onClick={(event) => onClickRegister(event)} ><p>¿No tienes cuenta? Registrate</p></a>
+          <a onClick={(event) => onClickRegister(event)} ><p style={{ margin: "40px", cursor: "pointer" }}>¿No tienes cuenta? Registrate</p></a>
         </>
         :
         <Alert color="success" onDismiss={() => closeModal()}>
