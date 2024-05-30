@@ -3,9 +3,10 @@ import { useState } from 'react';
 import { Badge, Button, Modal } from 'flowbite-react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import { useSelector } from 'react-redux';
 
 const ReservaPage = () => {
+  const {email} = useSelector(state => state.auth);
   const { id, selectedSchedule } = useParams();
   console.log('selected schedule', selectedSchedule)
   const sillasSala = Array.from({ length: 30 }, (_, index) => ({
@@ -43,20 +44,22 @@ const ReservaPage = () => {
   
 
     return (
+      
       <>
+
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
 
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-          <Badge color="dark" className='text-2xl justify-center'>
-              Pantalla
-          </Badge>
-          <br></br>
-        </div>
-          
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+            <Badge color="dark" className='text-2xl justify-center'>
+                Pantalla
+            </Badge>
+            <br></br>
+          </div>
+          {email ? 
           <div className="grid grid-cols-5 md:grid-cols-5 gap-4">
           {
-          sillasSalaList.map(
+            sillasSalaList.map(
             (silla, key) => {
               return ( 
               <Badge key={key} color={!silla.reservada ? "success" : "failure"} className="justify-center" onClick={!silla.reservada ? () => setOpenModal({
@@ -69,13 +72,14 @@ const ReservaPage = () => {
                 </svg>
                 
               </Badge>
-          )}
-          )
-                
-                
+              )}
+              )      
             }
-                </div>
-            </div>
+          </div>
+          : 
+            <div>Por favor inicie sesión para reservar...</div>
+          }
+        </div>
       </section>
       
     <Modal show={openModal.open} size="md" popup onClose={() => setOpenModal({open: false,id: null })}>
