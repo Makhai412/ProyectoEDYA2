@@ -31,10 +31,11 @@ export const authSlice = createSlice({
             state.accessToken = null
             state.error = null
         },
-        checkingCredentials: (state, value) => {
-            console.log('checking...');
+        checkingCredentials: (state) => {
+            state.status = 'checking';
         }
     }
 })
 
 export const { register, signIn, logOut, checkingCredentials } = authSlice.actions
+export default authSlice.reducer;

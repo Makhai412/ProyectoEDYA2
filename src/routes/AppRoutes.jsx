@@ -11,11 +11,13 @@ import FantasyCategory from '../components/categoriescomponent/InEachCategory/Fa
 import TerrorCategory from '../components/categoriescomponent/InEachCategory/TerrorCategory';
 import ReservaPage from "../pages/reserva/ReservaPage";
 import SignUp from '../pages/login/SignUp';
+import AboutUs from '../pages/aboutus/AboutUs';
 
 const AppRoutes = () => {
     let routes = useRoutes([
         { path: '/', element: <Home /> },
         { path: '/home', element: <Home /> },
+        { path: '/aboutus', element: <AboutUs /> },
         { path: '/home/signup', element: <SignUp /> },
         { path: '/movie/:id', element: <InMovie /> },
         { path: '/movie/:id/reserva/:selectedSchedule', element: <ReservaPage /> },
