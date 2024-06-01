@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const SuggestionsCards = ({ suggestions }) => {
     return (
@@ -7,7 +8,9 @@ export const SuggestionsCards = ({ suggestions }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {suggestions.map((suggestion) => (
                     <div key={suggestion.id} className="card bg-white rounded-lg shadow-md dark:bg-gray-800 overflow-hidden">
-                        <img src={suggestion.img} alt={suggestion.nombre} className="w-full h-100 object-cover" />
+                        < Link to={`/movie/${suggestion.id}`}>
+                            <img src={suggestion.img} alt={suggestion.nombre} className="w-full h-100 object-cover" />
+                        </Link>
                         <div className="p-4">
                             <h2 className="text-xl font-bold text-gray-900 dark:text-white">{suggestion.nombre}</h2>
                         </div>
