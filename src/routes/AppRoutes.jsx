@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Home from "../components/homecomponent/Home";
 import { InMovie } from '../pages/inmovie/InMovie';
 import NotFound from '../components/homecomponent/NotFound';
@@ -12,28 +12,23 @@ import TerrorCategory from '../components/categoriescomponent/InEachCategory/Ter
 import ReservaPage from "../pages/reserva/ReservaPage";
 import SignUp from '../pages/login/SignUp';
 
-
-
 const AppRoutes = () => {
     let routes = useRoutes([
         { path: '/', element: <Home /> },
         { path: '/home', element: <Home /> },
         { path: '/home/signup', element: <SignUp /> },
         { path: '/movie/:id', element: <InMovie /> },
-        { path: '/movie/:id/reserva/:selectedSchedule', element: <ReservaPage/> },
+        { path: '/movie/:id/reserva/:selectedSchedule', element: <ReservaPage /> },
         { path: '/categoria', element: <ListaCategories /> },
         { path: '/categoria/:title', element: <CardCategories /> },
         { path: '/categoria/Acción', element: <ActionCategory /> },
         { path: '/categoria/Aventura', element: <AdventureCategory /> },
         { path: '/categoria/Fantasía', element: <FantasyCategory /> },
         { path: '/categoria/Terror', element: <TerrorCategory /> },
-
         { path: '/*', element: <NotFound /> }
+    ]);
 
-
-    ])
-
-    return routes
-}
+    return routes;
+};
 
 export default AppRoutes;

@@ -6,7 +6,12 @@
         "reviews": 310,
         "sinopsis": "Gepetto es un carpintero que vive solo y aislado, después de haber perdido a su hijo en la nostálgica Italia durante la Guerra, pero quien, cansado de su situación, decide crear a Pinocho, un niño de madera con el que intentará recuperar la felicidad.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1yIM2QL0qLzWMjTGuMX12yZnBtb.jpg",
-        "categorias": "Acción",
+        "categoria": "Acción",
+        "tags": [
+            "Drama",
+            "Familia",
+            "Fantasía"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
@@ -37,6 +42,13 @@
         "reviews": 410,
         "sinopsis": "Woody siempre ha tenido claro cuál es su labor en el mundo y cuál es su prioridad: cuidar a su dueño, ya sea Andy o Bonnie. Sin embargo, Woody descubrirá lo grande que puede ser el mundo para un juguete cuando Forky se convierta en su nuevo compañero de habitación. Los juguetes se embarcarán en una aventura de la que no se olvidarán jamás.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yF1vPDuHVrAUMX5dy1tVMbAjkEL.jpg",
+        "tags": [
+            "Familia",
+            "Aventura",
+            "Animación",
+            "Comedia",
+            "Fantasía"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
@@ -67,6 +79,12 @@
         "reviews": 327,
         "sinopsis": "Sonic intenta navegar por las complejidades de la vida en la Tierra con su nuevo mejor amigo, un humano llamado Tom Wachowski. Pronto deben unir fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus poderes para dominar el mundo.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rK25c71fYVi0Bv7RrTChK7NAQjC.jpg",
+        "tags": [
+            "Acción",
+            "Ciencia ficción",
+            "Comedia",
+            "Familia"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
@@ -97,6 +115,10 @@
         "reviews": 210,
         "sinopsis": "Una paramédica de Manhattan que se ve obligada a enfrentarse a revelaciones sobre su pasado forja una relación con tres jóvenes destinadas a tener un futuro poderoso, si consiguen sobrevivir a un presente mortal.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/blq050GHBt0Fzx1j9FvohaEuknJ.jpg",
+        "tags": [
+            "Acción",
+            "Fantasía"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
@@ -127,6 +149,11 @@
         "reviews": 256,
         "sinopsis": "Jessica se muda al hogar en el que creció con su familia. Allí, su pequeña hijastra, Alice, encuentra un osito de peluche llamado Chauncey. Poco a poco, el comportamiento de Alice se va volviendo perturbador, por lo que Alice sospecha del juguete.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6jrq4lA5KV3oIFnCYGDueSMTENd.jpg",
+        "tags": [
+            "Teror",
+            "Misterio",
+            "Suspenso"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
@@ -157,6 +184,10 @@
         "reviews": 210,
         "sinopsis": "En Halloween, un grupo de amigos encuentran una casa encantada que hará que sus pesadillas se vuelvan realidad.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6fuNWZzY0RijO1Xpw46soazDFMb.jpg",
+        "tags": [
+            "Terror",
+            "Suspenso"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
@@ -187,6 +218,11 @@
         "reviews": 180,
         "sinopsis": "Una mujer y su hijo contratan a un variopinto grupo de supuestos expertos espirituales para que los ayuden a liberar su casa de los fenómenos paranormales que sufre.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3EuVUPGihWXfwTt3myKVKOydPVW.jpg",
+        "tags": [
+            "Fantasía",
+            "Comedia",
+            "Familia"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
@@ -227,6 +263,11 @@
         "reviews": 655,
         "sinopsis": "Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ksBQ4oHQDdJwND8H90ay8CbMihU.jpg",
+        "tags": [
+            "Aventura",
+            "Acción",
+            "Ciencia ficción"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
@@ -257,6 +298,9 @@
         "reviews": 320,
         "sinopsis": "Winnie the Pooh y Piglet se han vuelto salvajes y quieren sangre humana. Los antes entrañables amigos aterrorizan a Christopher Robin y un grupo de jóvenes en una casa aislada.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ZmbSkGEpXFufbDhgfTnSrFAguo.jpg",
+        "tags": [
+            "Terror"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
@@ -287,6 +331,10 @@
         "reviews": 350,
         "sinopsis": "El payaso Art resucita en la morgue. Un año después, en la noche de Halloween, el siniestro psicópata vuelve al condado de Miles para atacar a unos hermanos adolescentes cuyo difunto padre les legó un libro con bocetos premonitorios sobre Art.",
         "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6ZfvF7ZS8MJXe0YwRkPAtXNpXrG.jpg",
+        "tags": [
+            "Terror",
+            "Suspenso"
+        ],
         "horario": [
             {
                 "horarioNum": 1,
