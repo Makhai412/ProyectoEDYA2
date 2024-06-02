@@ -55,4 +55,5 @@ const ListaCategories = () => {
     );
 }
 
+export { categorias };
 export default ListaCategories;

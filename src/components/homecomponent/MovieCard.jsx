@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-export function MovieCard({ movieId, title, description, imgSrc, imgAlt, schedule, puntuation, reviews}) {
+export function MovieCard({ movieId, title, description, imgSrc, imgAlt, schedule, puntuation, reviews, categoria}) {
     const [showDescription, setShowDescription] = useState(false);
     
     return (
-        <Link to={`/movie/${movieId}`} style={{ textDecoration: "none" }} state={{ movieId, title, description, imgSrc, schedule, puntuation, reviews }}>
+        <Link to={`/movie/${movieId}`} style={{ textDecoration: "none" }} state={{ movieId, title, description, imgSrc, schedule, puntuation, reviews, categoria }}>
             <div
                 className="max-w-sm relative"
                 onMouseEnter={() => setShowDescription(true)}
