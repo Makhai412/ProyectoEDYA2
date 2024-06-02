@@ -6,22 +6,16 @@ import { SolicitudHorario } from '../../components/moviescomponent/SolicitudHora
 import { useSelector } from 'react-redux';
 import sugerencias from "../../../src/pages/sugerencias.json";
 import { SuggestionsCards } from '../../components/homecomponent/SuggestionsCards';
+import infosalas from "../../../src/pages/infosalas.json";
 
 export const InMovie = () => {
     const { id } = useParams();
     const location = useLocation();
-    const { title, description, imgSrc, schedule, puntuation, reviews } = location.state;
+    const { title, description, imgSrc, schedule, puntuation, reviews, categoria } = location.state;
     const { email } = useSelector(state => state.auth);
 
-    const [suggestions, setSuggestions] = useState([]);
-
-    useEffect(() => {
-        const movieSuggestions = sugerencias.filter(suggestion => suggestion.sugerencia === title);
-        setSuggestions(movieSuggestions);
-    }, [title]);
-
     // Filtra las primeras tres imágenes del json basadas en el id de la ruta
-    const filteredSuggestions = sugerencias.slice((id - 1) * 3, id * 3);
+    const filteredSuggestions = infosalas.filter(movie => movie.categoria == categoria && title !== movie.nombre) ;
 
     return (
         <section className="bg-white md:py-8 dark:bg-gray-900 antialiased font-serif">

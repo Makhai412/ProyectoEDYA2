@@ -9,7 +9,7 @@ export const SuggestionsCards = ({ suggestions }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {suggestions.map((suggestion) => (
                     <div key={suggestion.id} className="card bg-white rounded-lg shadow-md dark:bg-gray-800 overflow-hidden">
-                        < Link to={`/movie/${suggestion.id}`}>
+                        < Link onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} to={`/movie/${suggestion.id}`} state={{ suggestion: suggestion.id, title: suggestion.nombre, description: suggestion.sinopsis, imgSrc: suggestion.img, schedule: suggestion.horario, puntuation: suggestion.calificacion, reviews: suggestion.reviews, categoria:suggestion.categoria }}>
                             <img src={suggestion.img} alt={suggestion.nombre} className="w-full h-100 object-cover" />
                         </Link>
                         <div className="p-4">

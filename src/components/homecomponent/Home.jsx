@@ -37,6 +37,7 @@ function Home() {
                             schedule={movie.horario}
                             puntuation={movie.calificacion}
                             reviews={movie.reviews}
+                            categoria ={movie.categoria}
                         />
                     ))}
                 </div>

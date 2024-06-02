@@ -42,7 +42,7 @@ const NavbarComponent = () => {
           </Link>
           <Link to="/cartelera" className="text-white">Cartelera</Link>
           <Link to="/categoria" className="text-white">Categoria</Link>
-          <Link to="/aboutus" className="text-white">About Us</Link>
+          <Link to="/aboutus" className="text-white">Nuestro Equipo</Link>
         </NavbarCollapse>
       </Navbar>
       <Modal show={openModal} size="md" popup onClose={() => setOpenModal(false)}>
